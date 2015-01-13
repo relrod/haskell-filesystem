@@ -76,7 +76,7 @@ module Filesystem
 import           Prelude hiding (FilePath, readFile, writeFile, appendFile)
 
 import qualified Control.Exception as Exc
-import           Control.Monad (forM_, unless, when)
+import           Control.Monad (forM_, unless)
 import qualified Data.ByteString as B
 import qualified Data.ByteString.Lazy as BL
 import qualified Data.Text as T
@@ -92,7 +92,6 @@ import           Filesystem.Path.CurrentOS (currentOS, encodeString, decodeStrin
 import qualified Filesystem.Path.Rules as R
 
 import qualified System.IO as IO
-import           System.IO.Error (IOError)
 
 #ifdef CABAL_OS_WINDOWS
 
